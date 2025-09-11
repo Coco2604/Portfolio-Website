@@ -244,7 +244,7 @@ section .main-container{
 }
 
 /* Project GitHub Button Styling */
-.services .boxes .box a button {
+.projects .boxes .box a button {
     background: #fff;
     color: #b74b4b;
     border: 2px solid #b74b4b;
@@ -257,7 +257,7 @@ section .main-container{
     transition: all 0.3s;
     box-shadow: 0 0 10px rgba(183,75,75,0.1);
 }
-.services .boxes .box a button:hover {
+.projects .boxes .box a button:hover {
     background: #b74b4b;
     color: #fff;
     border: 2px solid #fff;
@@ -397,12 +397,12 @@ section .button button:hover{
     color: #b74b4b;
 }
 
-.services .boxes{
+.projects .boxes{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.services .boxes .box{
+.projects .boxes .box{
     margin: 20px 0;
     width: calc(100% / 3 - 20px);
     text-align: center;
@@ -413,11 +413,11 @@ section .button button:hover{
     color: white;
     transition: all 0.4s ease;
 }
-.services .boxes .box:hover{
+.projects .boxes .box:hover{
     background: #b74b4b;
     color: #fff;
 }
-.services .boxes .box .icon{
+.projects .boxes .box .icon{
     height: 50px;
     width: 50px;
     background: #b74b4b;
@@ -433,13 +433,13 @@ section .button button:hover{
     background-color: #fff;
     color:#b74b4b;
 }
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover p{
+.projects .boxes .box:hover .topic,
+.projects .boxes .box:hover p{
     color: white;
     transition: all 0.4s ease;
 }
-.services .boxes .box:hover .topic,
-.services .boxes .box:hover p{
+.projects .boxes .box:hover .topic,
+.projects .boxes .box:hover p{
     color: #fff; 
 }
 
@@ -503,7 +503,7 @@ footer .text span a:hover{
         width: 90%;
         margin: 40px 0;
     }
-    .services .boxes .box{
+    .projects .boxes .box{
         margin: 20px 0;
         width: calc(100% / 2 - 20px);
     }
@@ -575,7 +575,7 @@ footer .text span a:hover{
         width: 100%;
     }
 
-    .services .boxes .box{
+    .projects .boxes .box{
         margin: 20px 0;
         width: 100%;
     }
