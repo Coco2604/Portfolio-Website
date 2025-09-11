@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
@@ -19,42 +20,44 @@
         <span>Tanvi</span>
       </div>
       <div class="links">
-        <div class = "link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
-        <div class = "link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
-        <div class = "link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
-        <div class = "link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Projects</a></div>
-        <div class = "link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
+        <div class = "link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#header">Home</a></div>
+        <div class = "link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">About</a></div>
+        <div class = "link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills">Skills</a></div>
+        <div class = "link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#projects">Projects</a></div>
+        <div class = "link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#contact">Contact</a></div>
       </div>
       <i class = "fa-solid fa-bars hamburg" onclick="hamburg()"></i>
     </div>
     <div class="dropdown">
       <div class="links">
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Skills</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
         <i class = "fa-solid fa-xmark cancel" onclick="cancel()"></i>
       </div>
     </div>
   </nav>
   <section>
-    <div class="main-container">
+    <div class="main-container" id ="header">
       <div class="image" data-aos="zoom-out" data-aos-duration="3000">
         <img src="Image.jpg" alt="">
       </div>
       <div class="content">
         <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hey I'm<span>Tanvi</span></h1>
         <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">I'm a <span class="auto"></span></div>
-        <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">Lorem ipsum dolor sit amet consectetur</p>
+        <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100"></p>
         <div class="social-links">
-          <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
-          <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
-          <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-twitter"></i></a> 
+          <a href="https://github.com/Coco2604/" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+          <a href="https://instagram.com/tuned_symphony" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/tanvi-k-893516264/" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://twitter.com/tanvi2604" target="_blank" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-twitter"></i></a> 
         </div>
         <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
-          <button>Hire Me</button>
+          <a href="#about">
+            <button>Hire Me</button>
+          </a>
         </div>
       </div>
     </div>
@@ -71,8 +74,8 @@
         </div>
         <div class="right">
           <div class="topic" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">Designing Is My Passion</div>
-          <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-          <div class="button" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="400"><button>Download CV</button></div>
+          <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="300">I'm a final-year undergraduate student at IIIT-Naya Raipur, pursuing a degree in Data Science and Artificial Intelligence. I bring a blend of technical proficiency and leadership experience, having interned with Microsoft’s Core AI team, where I contributed to optimizing fine-tuning workflows and developing agentic AI systems. In parallel, I’ve served as a Student Placement Coordinator, actively facilitating industry outreach and alumni engagement to support student placement initiatives. I am driven by a passion for solving real-world problems through technology and effective collaboration.</p>
+          <div class="button" data-aos="zoom-in-right" data-aos-duration="1500" data-aos-delay="400"><a href="https://drive.google.com/file/d/17pRn12tgOB2-fkQvHSV9eQIg_bEoqCeY/view?usp=drive_link" target="_blank" rel="noopener"><button>Download CV</button></a></div>
         </div>
       </div>
     </div>
@@ -87,11 +90,11 @@
           <div class="topic" data-aos="fade-right" data-aos-duration="1200" data-aos-delay="200">
             Skills Reflects Our Knowledge
           </div>
-          <p data-aos="fade-right" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis nihil libero quaerat? Odio consectetur dicta, earum veniam id doloribus voluptas beatae ab, ipsa deserunt et quae esse? Alias, architecto omnis?</p>
+          <p data-aos="fade-right" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="400">I have strong technical skills in Python, C, C++, JavaScript, SQL, and web technologies including React.js and Node.js. My experience spans AI, machine learning, and blockchain development, where I have built impactful projects such as decentralized applications, traffic simulations, and AI-powered tools. With a solid foundation in data structures, algorithms, and problem-solving, I complement my technical expertise with leadership, communication, and time management skills that help me perform effectively in diverse environments.</p>
           <div class="experience" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
-            <div class="num">10</div>
+            <div class="num">2</div>
             <div class="exp">
-              Years Of<br/>
+              Months Of<br/>
               Experience
             </div> 
           </div> 
@@ -119,51 +122,48 @@
   </section>
 
 <!--My Services Section Start-->
-<section class="services" id="services">
+<section class="projects" id="projects">
   <div class="content">
-    <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>My Services</span></div>
+    <div class="title" data-aos="fade-up" data-aos-duration="1200"><span>My Projects</span></div>
     <div class="boxes">
       <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
         <div class="icon">
-          <i class="fas fa-desktop"></i>
+          <i class="fas fa-coins"></i>
         </div>
-        <div class="topic">Web Development</div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        <div class="topic">Blockchain Crowdfunding DApp</div>
+        <ul style="color:white; text-align:left; margin: 10px 0 10px 18px; font-size:1rem;">
+          <li>Developed a decentralized crowdfunding platform on Ethereum using Solidity smart contracts.</li>
+          <li>Enabled users to create and fund campaigns with trustless fund management via blockchain.</li>
+          <li>Integrated wallet connection and transaction handling with MetaMask and Thirdweb SDK.</li>
+          <li>Built a responsive frontend using React.js, Tailwind CSS, and Vite.</li>
+        </ul>
+        <a href="https://github.com/Coco2604/crowdfunding_main" target="_blank" style="color:#b74b4b;"><button>GitHub</button></a>
       </div>
       <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400">
         <div class="icon">
-          <i class="fas fa-paint-brush"></i>
+          <i class="fas fa-traffic-light"></i>
         </div>
-        <div class="topic">Graphic Design</div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        <div class="topic">Traffic Signal Simulation with AI</div>
+        <ul style="color:white; text-align:left; margin: 10px 0 10px 18px; font-size:1rem;">
+          <li>Developed a traffic signal simulation with AI-driven real-time traffic management at a four-way intersection.</li>
+          <li>Integrated YOLOv8 model for accurate vehicle detection in the simulation.</li>
+          <li>Utilized Google Generative AI for dynamic decision-making on traffic signal states.</li>
+          <li>Designed and rendered a visual traffic simulation using Pygame for enhanced user interaction.</li>
+        </ul>
+        <a href="https://github.com/Coco2604/Traffic-Signal-Simulation-with-AI-Decision-Making" target="_blank" style="color:#b74b4b;"><button>GitHub</button></a>
       </div>
       <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
         <div class="icon">
-          <i class="fas fa-chart-line"></i>
+          <i class="fas fa-question-circle"></i>
         </div>
-        <div class="topic">Digital Marketing</div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-      </div>
-      <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
-        <div class="icon">
-          <i class="fas fa-android"></i>
-        </div>
-        <div class="topic">Icon Design</div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-      </div>
-      <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
-        <div class="icon">
-          <i class="fas fa-camera-retro"></i>
-        </div>
-        <div class="topic">Photography</div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
-      </div>
-      <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200">
-        <div class="icon">
-          <i class="fas fa-tablet-alt"></i>
-        </div>
-        <div class="topic">Apps Development</div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        <div class="topic">Techni-Quiz: MCQ Generator</div>
+        <ul style="color:white; text-align:left; margin: 10px 0 10px 18px; font-size:1rem;">
+          <li>Developed Techni-Quiz, an MCQ generator using Gemini-API, Next.js, and Node.js.</li>
+          <li>Implemented a feature to extract and convert content from PDF URLs into MCQs for educational purposes.</li>
+          <li>Utilized Tailwind CSS for responsive and modern UI design.</li>
+          <li>Integrated environment variable management for secure API key handling.</li>
+        </ul>
+        <a href="https://github.com/Coco2604/Techni-Quiz" target="_blank" style="color:#b74b4b;"><button>GitHub</button></a>
       </div>
     </div>
   </div>

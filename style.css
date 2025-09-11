@@ -243,6 +243,26 @@ section .main-container{
     box-shadow: 0 0 40px #b74b4b;
 }
 
+/* Project GitHub Button Styling */
+.services .boxes .box a button {
+    background: #fff;
+    color: #b74b4b;
+    border: 2px solid #b74b4b;
+    border-radius: 5px;
+    padding: 8px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 0 10px rgba(183,75,75,0.1);
+}
+.services .boxes .box a button:hover {
+    background: #b74b4b;
+    color: #fff;
+    border: 2px solid #fff;
+    box-shadow: 0 0 20px #b74b4b;
+}
 /*About Section Styling*/
 section .content{
     width: 80%;
