@@ -184,7 +184,7 @@ section .main-container{
 }
 
 .content .typewriter{
-    font-size: clamp(1rem, 1rem+5vw, 2.5rem);
+    font-size: clamp(1rem, 1rem + 5vw, 2.5rem);
     font-weight: 600;
 }
 
@@ -194,7 +194,7 @@ section .main-container{
 }
 
 .content p{
-    font-size: clamp(0.4rem, 0.2rem+9vw, 1rem);
+    font-size: clamp(0.4rem, 0.2rem + 9vw, 1rem);
     margin: 10px 0;
 }
 
@@ -563,4 +563,25 @@ footer .text span a:hover{
     .contact .text{
         width: 100%;
     }
+}
+
+@media(max-width:500px){
+    main-container .image{
+        width: 50%;
+        height: 60%;
+        margin-bottom: 0px;
+    }
+
+    .main-container .content{
+        width: 80%;
+    }
+
+    .main-container button{
+        margin-top: 15px;
+    }
+
+.skills-details .boxes .per{
+    font-size: 50px;
+    color: #b74b4b;
+}
 }
