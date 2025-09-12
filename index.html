@@ -179,11 +179,70 @@
       <div class="topic" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">Have Any Project?</div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias eligendi accusamus veniam, recusandae perspiciatis qui odio tenetur officiis omnis eos aspernatur deleniti laborum voluptatibus est! Quia deserunt omnis odio cumque!</p>
       <div class="button" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="400">
-        <button>Let's Chat</button>
+        <button id="openChat">Let's Chat</button>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Modal Chat Form -->
+<div id="chatModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+    <h2>Let's Chat</h2>
+    <form id="chatForm">
+      <input type="text" name="Name" placeholder="Your Name" required>
+      <input type="email" name="Email" placeholder="Your Email" required>
+      <textarea name="Message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+      <span id="msg" style="color: #b74b4b; font-weight: 500;"></span>
+    </form>
+  </div>
+</div>
+
+<script>
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxS2IQ9D1q9xlD4u7ouwrP1ZB-2OaQtP6R3zyGnyNPn9ev4LV-WjKGKTuVW0VsLnKpYXQ/exec';
+const modal = document.getElementById("chatModal");
+const openBtn = document.getElementById("openChat");
+const closeBtn = document.getElementById("closeModal");
+const form = document.getElementById("chatForm");
+const msg = document.getElementById("msg");
+
+// Open modal
+openBtn.onclick = function() {
+  modal.style.display = "block";
+}
+// Close modal
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+// Form submission
+form.addEventListener('submit', e => {
+  e.preventDefault();
+  fetch(scriptURL, {
+    method: 'POST',
+    body: new FormData(form)
+  })
+  .then(response => {
+    msg.innerHTML = "Message Sent Successfully!";
+    setTimeout(() => {
+      msg.innerHTML = "";
+      modal.style.display = "none";
+    }, 2000);
+    form.reset();
+  })
+  .catch(error => {
+    msg.innerHTML = "Something went wrong. Please try again!";
+    setTimeout(() => { msg.innerHTML = ""; }, 5000);
+  });
+});
+</script>
 
 <!-- Footer Section Start -->
 <footer>
