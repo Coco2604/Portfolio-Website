@@ -220,7 +220,7 @@ section .main-container{
     filter: drop-shadow(0 0 10px #b74b4b);
 }
 
-.content button{
+.main-container .content button{
     width: 50%;
     height: 6vh;
     margin: 30px;
@@ -234,7 +234,7 @@ section .main-container{
     transition: 0.2s linear;
 }
 
-.content button:hover{
+.main-container .content button:hover{
     scale: 1.1;
     background-color: transparent;
     border: 2px solid #b74b4b;
@@ -329,17 +329,16 @@ section .button{
 }
 section .button button{
     outline: none;
-    padding: 8px 16px;
+    padding: 10px 24px;
     border-radius: 4px;
-    font-size:25px;
-    font-weight: 400;
+    font-size: 1.1rem;
+    font-weight: 500;
     background: #b74b4b;
     color: #fff;
     border: 2px solid transparent;
     cursor: pointer;
     transition: all 0.4s ease;
-    width: auto;
-    height: auto;
+    white-space: nowrap;
 }
 section .button button:hover{
     border-color: #b74b4b;
